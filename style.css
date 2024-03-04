@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    /* Colours */
+    --darkBGColour: #1f2937;
+    --heroPrimaryTextColour: #f9faf8;
+    --heroSecondaryTextColour: #e5e7eb;
+
+    --callToActionBGColour: #3882f6;
+    --darkTextColour: #1f2937;
+
+    --quoteSectionBGColour: #e5e7eb;
+
+    /* Font Sizes */
+    --heroTextSize: 48px;
+    --heroSecondaryTextSize: 18px;
+    --headerLogoTextSize: 24px;
+    --infoHeaderTextSize: 36px;
+    --quoteTextSize: 36px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .footer{
+    background-color: var(--darkBGColour);
+    color: var(--heroPrimaryTextColour);
+}
+
+.information{
+
+}
+
+.quote{
+    background-color: var(--quoteSectionBGColour);
+}
+
+.callToAction{
+
+}
