@@ -126,9 +126,9 @@ button{
     width: 144px;
     object-fit: cover;
     border: var(--callToActionBGColour) 4px solid;
-    border-radius: 18px;
+    border-radius: 16px;
 }
 
 .quote{
-    
+
 }
