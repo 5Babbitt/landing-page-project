@@ -32,6 +32,20 @@ ul{
     display: flex;
     list-style: none;
     gap: 16px;
+    font-weight: lighter;
+}
+
+h1{
+    font-size: var(--heroTextSize);
+    font-weight: bolder;
+}
+
+h2{
+    padding: 24px;
+}
+
+h3{
+    font-size: var(--headerLogoTextSize);
 }
 
 button{
@@ -39,7 +53,9 @@ button{
     color: var(--heroSecondaryTextColour);
     border: none;
     border-radius: var(--borderRadius);
-    padding: 3px var(--headerLogoTextSize);
+    padding: 4px 18px;
+    width: 96px;
+    font-weight: bold;
 }
 
 .header, .footer{
@@ -47,50 +63,61 @@ button{
     color: var(--heroPrimaryTextColour);
 }
 
-.header, .information, .quote, .callToAction{
-    padding: 0 15%;
+.header{
+    padding: 0 96px;
     display: flex;
     justify-content: center;
-}
-
-.header{
     flex-direction: column;
 }
 
-.top{
+.header button{
+    margin-top: 16px;
+}
+
+.headerTop{
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
+    align-items: center;
 }
 
 .landing{
     display: flex;
     padding: 72px 0;
-}
-
-.signup{
-    display: flex;
-    
+    gap: 32PX;
 }
 
 .landing img{
     object-fit: cover;
-    height: 180px;
-    width: 75vh;
+    width: 40vw;
+    margin: 0;
+    padding: 0;
+}
+
+.landingText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .information{
+    padding: 0 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
-.quote{
-    background-color: var(--quoteSectionBGColour);
+.infoBlocks{
+    display: flex;
+    gap: 48px;
 }
 
-.callToAction{
-
+.infoBlock{
+    width: 100px;
 }
 
-.banner{
-    background-color: var(--callToActionBGColour);
+.infoBlock img{
+    height: 100px;
+    width: 100px;
 }
