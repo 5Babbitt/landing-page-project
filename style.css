@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
     /* Colours */
@@ -32,19 +32,21 @@ ul{
     display: flex;
     list-style: none;
     gap: 16px;
-    font-weight: lighter;
+    font-weight: 300;
 }
 
 h1{
+    font-weight: 900;
     font-size: var(--heroTextSize);
-    font-weight: bolder;
 }
 
 h2{
-    padding: 24px;
+    font-weight: 900;
+    padding: 32px;
 }
 
 h3{
+    font-weight: 700;
     font-size: var(--headerLogoTextSize);
 }
 
@@ -111,13 +113,22 @@ button{
 .infoBlocks{
     display: flex;
     gap: 48px;
+    padding-bottom: 72px;
 }
 
 .infoBlock{
-    width: 100px;
+    width: 144px;
+    text-align: center;
 }
 
 .infoBlock img{
-    height: 100px;
-    width: 100px;
+    height: 144px;
+    width: 144px;
+    object-fit: cover;
+    border: var(--callToActionBGColour) 4px solid;
+    border-radius: 18px;
+}
+
+.quote{
+    
 }
