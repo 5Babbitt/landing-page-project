@@ -17,6 +17,9 @@
     --headerLogoTextSize: 24px;
     --infoHeaderTextSize: 36px;
     --quoteTextSize: 36px;
+
+    /* Misc Sizes */
+    --borderRadius: 6px;
 }
 
 *{
@@ -25,9 +28,18 @@
     font-family: "Roboto", sans-serif;
 }
 
-body{
+ul{
     display: flex;
-    flex-direction: column;
+    list-style: none;
+    gap: 16px;
+}
+
+button{
+    background-color: var(--callToActionBGColour);
+    color: var(--heroSecondaryTextColour);
+    border: none;
+    border-radius: var(--borderRadius);
+    padding: 3px var(--headerLogoTextSize);
 }
 
 .header, .footer{
@@ -35,8 +47,40 @@ body{
     color: var(--heroPrimaryTextColour);
 }
 
-.information{
+.header, .information, .quote, .callToAction{
+    padding: 0 15%;
+    display: flex;
+    justify-content: center;
+}
 
+.header{
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.landing{
+    display: flex;
+    padding: 72px 0;
+}
+
+.signup{
+    display: flex;
+    
+}
+
+.landing img{
+    object-fit: cover;
+    height: 180px;
+    width: 75vh;
+}
+
+.information{
+    justify-content: center;
 }
 
 .quote{
@@ -45,4 +89,8 @@ body{
 
 .callToAction{
 
+}
+
+.banner{
+    background-color: var(--callToActionBGColour);
 }
