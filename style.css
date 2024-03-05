@@ -20,6 +20,7 @@
 
     /* Misc Sizes */
     --borderRadius: 6px;
+    --horizontalPadding: 144px;
 }
 
 *{
@@ -66,7 +67,7 @@ button{
 }
 
 .header, .information, .quote, .callToAction{ 
-    padding: 0 144px;
+    padding: 0 var(--horizontalPadding);
 }
 
 .header{
@@ -134,7 +135,7 @@ button{
 }
 
 .quote{
-    padding: 96px 144px;
+    padding: 96px var(--horizontalPadding);
     background-color: var(--quoteSectionBGColour);
     display: flex;
     flex-direction: column;
@@ -150,7 +151,7 @@ button{
 }
 
 .callToAction{
-    padding: 72px 144px;
+    padding: 72px var(--horizontalPadding);
     color: var(--heroPrimaryTextColour);
 }
 
